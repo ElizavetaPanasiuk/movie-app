@@ -1,0 +1,38 @@
+.list-item{
+  margin: 0 0 30px;
+  display: flex;
+  color: #FFF;
+  padding: 40px;
+}
+.banner{
+  width: 40%;
+}
+.banner img{
+  width: 90%;
+}
+.list-item-information{
+  width: 60%;
+}
+.film-name{
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 30px;
+
+}
+.film-genres-list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+.film-genres-list-item{
+  margin-right: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #FFF;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+.film-description{
+  font-size: 20px;
+  line-height: 1.5;
+}

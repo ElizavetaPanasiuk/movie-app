@@ -1,0 +1,22 @@
+.genres-container{
+  width: 25%;
+  background: rgb(52, 7, 65);
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.genre-item{
+  color: #FFF;
+  font-size: 26px;
+  line-height: 40px;
+  padding: 0 40px;
+}
+
+.genre-item:hover{
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.genre-item-active{
+  color: gold;
+}

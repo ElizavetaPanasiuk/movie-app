@@ -1,0 +1,5 @@
+.films-container{
+  width: 75%;
+  height: 100vh;
+  overflow-y: scroll;
+}
