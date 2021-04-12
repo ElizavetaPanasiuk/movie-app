@@ -2,6 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import Requests from './services/requests';
+import {Provider} from 'react-redux';
+import rootReducer from './store/index';
+import {createStore} from 'redux';
+
+const store = createStore(rootReducer);
 
 const renderPage = async() => {
   const genresList = await Requests.getGenresList();
@@ -34,7 +39,7 @@ const renderPage = async() => {
     return filmsList;
   }
 
-  ReactDOM.render(<App genresList={ genresList} renderFilmList={renderFilmList} />, document.getElementById('root'));
+  ReactDOM.render(<Provider store={store}><App genresList={ genresList} renderFilmList={renderFilmList} /></Provider>, document.getElementById('root'));
 }
 
 renderPage();
