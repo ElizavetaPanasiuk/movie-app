@@ -1,7 +1,7 @@
 import React from 'react';
 import './ListItem.css';
 
-const ListItem = ({name, image, description, genres, }) => {
+const ListItem = ({name, image, description, genres }) => {
   return(
     <div className="list-item">
       <div className="banner">

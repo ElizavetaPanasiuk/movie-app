@@ -38,7 +38,7 @@ export const setFilmsList = (genre_id) => {
       
       page++;
     }
-    
+
     dispatch({
       type: SET_FILMS_LIST,
       filmsList: data,
