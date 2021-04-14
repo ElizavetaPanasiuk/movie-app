@@ -8,8 +8,8 @@ export default class Requests{
     return genresList;
   }
 
-  static async getFilmPage(page){
-    const filmsRequest = await post(`${config.movieURL}${page}`);
+  static async getFilmPage(genre_id, page){
+    const filmsRequest = await post(`${config.movieURL(genre_id, page)}`);
     return filmsRequest;
   }
 
